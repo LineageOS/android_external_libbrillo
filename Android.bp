@@ -199,6 +199,12 @@ cc_library {
 
     host_supported: true,
     target: {
+        darwin: {
+            cflags: [
+                "-D_FILE_OFFSET_BITS=64",
+                "-Doff64_t=off_t",
+            ],
+        },
         windows: {
             enabled: false,
         },
@@ -221,6 +227,12 @@ cc_library_shared {
 
     host_supported: true,
     target: {
+        darwin: {
+            cflags: [
+                "-D_FILE_OFFSET_BITS=64",
+                "-Doff64_t=off_t",
+            ],
+        },
         windows: {
             enabled: false,
         },
