@@ -203,6 +203,7 @@ cc_library {
             cflags: [
                 "-D_FILE_OFFSET_BITS=64",
                 "-Doff64_t=off_t",
+                "-Dlseek64=lseek",
             ],
         },
         windows: {
