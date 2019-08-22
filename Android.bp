@@ -199,9 +199,6 @@ cc_library {
 
     host_supported: true,
     target: {
-        darwin: {
-            enabled: false,
-        },
         windows: {
             enabled: false,
         },
@@ -224,9 +221,6 @@ cc_library_shared {
 
     host_supported: true,
     target: {
-        darwin: {
-            enabled: false,
-        },
         windows: {
             enabled: false,
         },
