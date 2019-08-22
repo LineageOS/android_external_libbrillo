@@ -5,7 +5,9 @@
 #ifndef LIBBRILLO_BRILLO_ASYNCHRONOUS_SIGNAL_HANDLER_INTERFACE_H_
 #define LIBBRILLO_BRILLO_ASYNCHRONOUS_SIGNAL_HANDLER_INTERFACE_H_
 
+#ifdef __linux__
 #include <sys/signalfd.h>
+#endif
 
 #include <base/callback.h>
 #include <brillo/brillo_export.h>
