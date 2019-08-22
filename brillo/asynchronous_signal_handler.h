@@ -6,7 +6,9 @@
 #define LIBBRILLO_BRILLO_ASYNCHRONOUS_SIGNAL_HANDLER_H_
 
 #include <signal.h>
+#ifdef __linux__
 #include <sys/signalfd.h>
+#endif
 
 #include <map>
 
